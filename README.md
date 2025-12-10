@@ -1,7 +1,7 @@
 # GÜN PROJESI:
 
-[ ] Gemini API key oluştur
-[ ] API'yi uygulamaya ekle
+[x] Gemini API key oluştur
+[x] API'yi uygulamaya ekle
 [ ] Markdown'ları düzgün göster
-[ ] key'i env variables'a al
-[ ] API isteğini custom hook olarak yaz??? (useGemini)
+[x] key'i env variables'a al
+[x] API isteğini custom hook olarak yaz??? (useGemini)
