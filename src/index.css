@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.response-container {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.input-container {
+  padding: 1rem;
+  text-align: center;
+  background-color: blue;
+}
+
+.messageBalloon {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0.7rem auto;
+  filter: drop-shadow(0.3rem 0.3rem 0.2rem rgba(121, 121, 121, 0.249));
+}
+
+.user {
+  background: lightblue;
+  margin-right: 0;
+}
+
+.assistant {
+  background: lightgray;
+  margin-left: 0;
+}
+
+.user::after,
+.assistant::after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  top: -0.5rem;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.user::after {
+  content: 'U';
+  background-color: rgb(19, 149, 224);
+  right: -0.5rem;
+}
+
+.assistant::after {
+  content: 'G';
+  background-color: rgb(143, 32, 32);
+  left: -0.5rem;
+}
